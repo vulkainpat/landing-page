@@ -1,0 +1,5 @@
+Landing Page Drakkar
+
+Aucune branche n'a été créée, je suis parti du main directement. 
+
+L'utilisation de Tailwind s'est faite à partir du CDN car le package pour le NPM ne fonctionnait pas. 
