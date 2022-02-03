@@ -5,13 +5,259 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwinds</title>
+    <title>landing page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        redDevil: '#D61B27',
+                        grayLight: '#F7F5F5',
+                        blackWidow: '#201d1d',
+                        grayTiny: '#FAFAFA',
+                    },
+                    fontSize: {
+                        big: '3.5rem',
+                    },
+                    fontFamily: {
+                        volkhov: "'Volkhov', 'serif'",
+                        workSans: "'Work Sans', 'sans-serif'",
+                    },
+                    height: {
+                        90: '22.750rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer base { @font-face { font-family: "Volkhov"; src: url('/fonts/Volkhov-Regular.ttf'); } @font-face { font-family: "WorkSans"; src: url('/fonts/WorkSans-Regular.ttf'); } }
+    </style>
 
-    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <h1>Test</h1>
+<body class="font-workSans">
+    <div class="w-full mx-auto pt-20 overflow-x-hidden">
+        <div class="md:container mx-auto space-y-4 flex flex-wrap md:space-y-0 md:px-8 md:flex-row mb-10 md:mb-20 lg:max-w-screen-lg lg:px-0">
+            <h2 class="font-volkhov mx-auto text-4xl md:basis-1/2 lg:text-big leading-tight">Plus ça change.<br> Plus c’est pareil.<br>
+                <span class="text-redDevil">Et c’est tant mieux.</span>
+            </h2>
+            <div class="mx-auto w-72 text-xl md:basis-2/5 px-1.5 lg:text-3xl">
+                <hr class='relative w-20 h-1 bg-redDevil my-2 sm:my-0 sm:bottom-4'>
+                <p><strong>Votre média préféré lance l’abonnement numérique</strong> et réaffirme du même coup sa mission de produire une information de proximité crédible, traitée avec rigueur et profondeur.</p>
+
+            </div>
+        </div>
+        <!-- *****   BANNER   *****  -->
+        <img class="w-full" src="images/GettyImages-1031313670.png" alt="banniere">
+        <!-- *****  BANNER END ***** -->
+        <!-- ***** SERVICES ***** -->
+        <section class="px-8 py-12 text-center bg-grayLight">
+            <div class="mx-auto md:w-11/12 lg:max-w-4xl lg:px-2">
+                <p class="font-workSans text-2xl lg:text-3xl"><strong>Tout le potentiel du numérique</strong> au service d’une expérience d’information plus personnalisée, plus près de vos intérêts.</p>
+                <ul class="font-workSans flex flex-col mx-auto md:flex-row space-y-6 md:space-x-8 md:space-y-0 mt-6 w-64 md:w-full text-base">
+                    <li class="md:w-1/3">
+                        <button>
+                    <svg class='mx-auto mb-2.5' xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75" >
+                        <g id="Group_82" data-name="Group 82" transform="translate(-380 -637)">
+                            <rect id="Rectangle_33" data-name="Rectangle 33" width="75" height="75" rx="37.5" transform="translate(380 637)" fill="#d61b27"/>
+                            <g id="Icon_ionic-ios-notifications" data-name="Icon ionic-ios-notifications" transform="translate(399.239 656.07)">
+                            <path id="Path_54848" data-name="Path 54848" d="M17.993,32.063c2.187,0,3.382-1.547,3.382-3.727H14.6C14.6,30.516,15.8,32.063,17.993,32.063Z" fill="#fff"/>
+                            <path id="Path_54849" data-name="Path 54849" d="M28.969,24.764c-1.083-1.427-3.213-2.264-3.213-8.655,0-6.56-2.9-9.2-5.6-9.83-.253-.063-.436-.148-.436-.415v-.2a1.716,1.716,0,1,0-3.431,0v.2c0,.26-.183.352-.436.415-2.707.64-5.6,3.27-5.6,9.83,0,6.391-2.13,7.221-3.213,8.655A1.4,1.4,0,0,0,8.163,27H27.858A1.4,1.4,0,0,0,28.969,24.764Z" fill="#fff"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <span><strong>Accédez de façon illimitée à tous nos contenus</strong> sur votre ordinateur, votre tablette et votre téléphone intelligent.</span>
+                </button>
+                    </li>
+                    <li class="md:w-1/3">
+                        <button>
+                    <svg class='mx-auto mb-2.5' xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+                        <g id="Group_83" data-name="Group 83" transform="translate(-631 -637)">
+                            <rect id="Rectangle_34" data-name="Rectangle 34" width="75" height="75" rx="37.5" transform="translate(631 637)" fill="#d61b27"/>
+                            <g id="cloud-offline-sharp" transform="translate(650 656.091)">
+                            <path id="Path_54850" data-name="Path 54850" d="M2.909,4.5,4.5,2.909,33.091,31.5,31.5,33.091Z" fill="#fff"/>
+                            <path id="Path_54851" data-name="Path 54851" d="M2.723,14.961A8.423,8.423,0,0,0,0,21.375a8.677,8.677,0,0,0,2.847,6.51,9.926,9.926,0,0,0,6.716,2.49H25.6L7.77,12.543a10.4,10.4,0,0,0-5.048,2.418Z" fill="#fff"/>
+                            <path id="Path_54852" data-name="Path 54852" d="M33.51,28.633A6.829,6.829,0,0,0,36,23.063c0-4.349-3.406-6.7-6.873-7.217a12.545,12.545,0,0,0-3.594-7.2A10.8,10.8,0,0,0,18,5.625a10.309,10.309,0,0,0-5.841,1.758L33.451,28.678c.018-.015.04-.029.059-.044Z" fill="#fff"/>
+                            </g>
+                        </g>
+                    </svg>
+                    <span><strong>Restez informé en tout temps</strong> grâce à des notifications qui vous alertent à tout moment des nouvelles à la une.</span>
+                </button>
+                    </li>
+                    <li class="md:w-1/3">
+                        <button>
+                    <svg class='mx-auto mb-2.5' xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+                        <g id="Group_84" data-name="Group 84" transform="translate(-139 -637)">
+                            <rect id="Rectangle_32" data-name="Rectangle 32" width="75" height="75" rx="37.5" transform="translate(139 637)" fill="#d61b27"/>
+                            <path id="Icon_material-devices" data-name="Icon material-devices" d="M6,9H33V6H6A3.009,3.009,0,0,0,3,9V25.5H0V30H21V25.5H6Zm28.5,3h-9A1.5,1.5,0,0,0,24,13.5v15A1.5,1.5,0,0,0,25.5,30h9A1.5,1.5,0,0,0,36,28.5v-15A1.5,1.5,0,0,0,34.5,12ZM33,25.5H27V15h6Z" transform="translate(159 657)" fill="#fff"/>
+                        </g>
+                    </svg>
+                    <span><strong>Consultez votre information locale en tout lieu.</strong> Chaque édition téléchargée est disponible avec vous, pour lecture en mode hors ligne.</span>
+                </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- ***** SERVICES END ***** -->
+        <!-- *****    OFFERS    ***** -->
+        <section class="flex flex-row flex-wrap justify-center mx-auto max-w-sm lg:max-w-screen-lg lg:mx-auto space-y-5 lg:space-y-0 my-10 lg:space-x-4">
+            <!-- *** DE BASE *** -->
+            <div class="relative bg-grayLight rounded-md px-5 mx-8 py-7 lg:w-1/4 lg:mx-0">
+                <h6 class="text-xs uppercase font-bold text-redDevil">De base</h6>
+                <h2 class="text-xl	font-bold">L’essentiel numérique</h2>
+                <p class="font-bold text-4xl mt-4">9,95$ <span class="text-[#000000BF] text-sm font-light">/ mois + tx</span></p>
+                <span class="text-[#000000BF] text-xs">* 4 semaines gratuites</span>
+                <ul class="text-sm space-y-4 mt-2">
+                    <li class="flex items-start">
+                        <svg width="30" height="8" fill="none" class="text-redDevil mr-2 mt-2">
+                            <path d="M1.5 4.5l2.236 2.236a1 1 0 001.467-.056L10.5.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path>  </svg> Accès aux sites Web des six médias membres des Coops de l’information
+                    </li>
+                    <li class="flex items-start">
+                        <svg width="30" height="8" fill="none" class="text-redDevil mr-2 mt-2">
+                            <path d="M1.5 4.5l2.236 2.236a1 1 0 001.467-.056L10.5.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path> 
+                        </svg>Accès aux applications mobiles iOS et Android des six médias
+                    </li>
+                    <li class="flex items-start">
+                        <svg width="16" height="8" fill="none" class="text-redDevil mr-2 mt-2">
+                            <path d="M1.5 4.5l2.236 2.236a1 1 0 001.467-.056L10.5.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path> 
+                        </svg> Accès simultanés autorisés.
+                    </li>
+                </ul>
+                <a href="#" class="text-center block p-2 rounded-md h-11 mt-4 font-bold text-white bg-redDevil lg:absolute lg:bottom-8 lg:w-5/6 transition ease-in-out delay-150 hover:duration-200 hover:w-full hover:bg-[#AF0F19] focus:bg-white focus:text-redDevil">Sélectionner ce plan</a>
+            </div>
+            <!-- *** PLUS *** -->
+            <div class="relative bg-grayLight rounded-md mx-8 px-5 py-7 border-4 border-redDevil overflow-hidden lg:w-1/4 lg:mx-0">
+                <span class="text-white text-sm font-bold bg-redDevil uppercase px-5 py-1 absolute -right-9 rotate-45 top-9">meilleure valeur</span>
+                <h6 class="text-xs uppercase font-bold text-redDevil">plus</h6>
+                <h2 class="text-xl font-bold">Le numérique<br> tout&nbsp;compris</h2>
+                <p class="font-bold text-4xl mt-4">12,95$ <span class="text-[#000000BF] text-sm font-light">/ mois + tx</span></p>
+                <span class="text-[#000000BF] text-xs">* 4 semaines gratuites</span>
+                <ul role="list" class="text-sm space-y-4 mt-2">
+                    <li class="flex items-start">
+                        <svg width="30" height="8" fill="none" class="text-redDevil mr-2 mt-2">
+                            <path d="M1.5 4.5l2.236 2.236a1 1 0 001.467-.056L10.5.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path> 
+                        </svg> Accès aux sites Web des six médias membres des Coops de l’information
+                    </li>
+                    <li class="flex items-start">
+                        <svg width="30" height="8" fill="none" class="text-redDevil mr-2 mt-2">
+                            <path d="M1.5 4.5l2.236 2.236a1 1 0 001.467-.056L10.5.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path> 
+                        </svg> Accès aux applications mobiles iOS et Android des six médias
+                    </li>
+                    <li class="flex items-start">
+                        <svg width="14" height="8" fill="none" class="text-redDevil mr-2 mt-2">
+                            <path d="M1.5 4.5l2.236 2.236a1 1 0 001.467-.056L10.5.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path> 
+                        </svg> Accès simultanés autorisés.
+                    </li>
+                    <li class="flex items-start">
+                        <svg width="60" height="8" fill="none" class="text-redDevil mr-2 mt-2">
+                            <path d="M1.5 4.5l2.236 2.236a1 1 0 001.467-.056L10.5.5" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path> 
+                        </svg> PLUS : Accès aux éditions magazines du week-end en format intégral électronique (disponibles dans les applications mobiles le samedi).
+                    </li>
+                </ul>
+                <a href="#" class="text-center block p-2 rounded-md h-11 mt-4 font-bold text-white bg-redDevil transition ease-in-out delay-150 hover:duration-200 hover:w-full hover:bg-[#AF0F19] focus:bg-white focus:text-redDevil">Sélectionner ce plan</a>
+            </div>
+            <!-- *** COMPLET *** -->
+            <div class="relative bg-grayLight rounded-md mx-8 px-5 py-7 lg:w-1/4 lg:mx-0">
+                <h6 class="text-sm uppercase font-bold text-redDevil">Complet</h6>
+                <h2 class="text-xl	font-bold">Le numérique et papier&nbsp;tout&nbsp;compris</h2>
+                <p class="font-bold text-4xl mt-4">16,95$ <span class="text-[#000000BF] text-sm font-light">/ mois + tx</span></p>
+                <span class="text-[#000000BF] text-xs">* 4 semaines gratuites</span>
+                <ul role="list " class="text-sm space-y-4 mt-2">
+                    <li class="flex items-start ">
+                        <svg width="30" height="8 " fill="none " class="text-redDevil mr-2 mt-2">
+                            <path d="M1.5 4.5l2.236 2.236a1 1 0 001.467-.056L10.5.5 " stroke="currentColor " stroke-width="1.5 " stroke-linejoin="round "></path> 
+                        </svg> Accès aux sites Web des six médias membres des Coops de l’information
+                    </li>
+                    <li class="flex items-start ">
+                        <svg width="16 " height="8 " fill="none " class="text-redDevil mr-2 mt-2">
+                            <path d="M1.5 4.5l2.236 2.236a1 1 0 001.467-.056L10.5.5 " stroke="currentColor " stroke-width="1.5 " stroke-linejoin="round "></path> 
+                        </svg> Accès simultanés autorisés.
+                    </li>
+                    <li class="flex items-start ">
+                        <svg width="30" height="8 " fill="none " class="text-redDevil mr-2 mt-2">
+                            <path d="M1.5 4.5l2.236 2.236a1 1 0 001.467-.056L10.5.5 " stroke="currentColor " stroke-width="1.5 " stroke-linejoin="round "></path> 
+                        </svg> Accès aux applications mobiles iOS et Android des six médias
+                    </li>
+                    <li class="flex items-start ">
+                        <svg width="60" height="8 " fill="none " class="text-redDevil mr-2 mt-2 ">
+                            <path d="M1.5 4.5l2.236 2.236a1 1 0 001.467-.056L10.5.5 " stroke="currentColor " stroke-width="1.5 " stroke-linejoin="round "></path> 
+                        </svg>PLUS : L’édition imprimée du samedi de votre média préféré, livrée à domicile (si disponible dans votre secteur).
+                    </li>
+                </ul>
+                <a href="#" class="text-center block p-2 rounded-md h-11 mt-4 font-bold text-white bg-redDevil lg:absolute lg:bottom-8 lg:w-5/6 transition ease-in-out delay-150 hover:duration-200 hover:w-full hover:bg-[#AF0F19] focus:bg-white focus:text-redDevil">Sélectionner ce plan</a>
+            </div>
+        </section>
+        <!-- ***** SERVICES END ***** -->
+        <!-- *****   ALWAYS   ***** -->
+        <section class="space-y-12 md:space-y-0">
+            <div class="flex flex-row items-center flex-wrap space-y-8 ">
+                <img class="w-full md:w-1/2 mb-8" src="images/GettyImages-177834448.png " alt=" ">
+                <div class="mx-auto w-72 text-xl px-1.5  md:basis-2/5  lg:text-3xl ">
+                    <hr class='relative w-20 h-1 bg-redDevil my-2 sm:my-0 bottom-6'>
+                    <p><strong>Toujours cette même expertise journalistique,</strong> vos mêmes ressources chevronnées, cette même compétence à identifier ce qui est vraiment important pour vous.</p>
+                </div>
+            </div>
+            <div class="relative space-y-10 flex items-center flex-wrap flex-row">
+                <div class="mx-auto w-72 text-xl md:basis-2/5 px-1.5 lg:text-3xl ">
+                    <hr class='relative w-20 h-1 bg-redDevil my-2 sm:my-0 bottom-6'>
+                    <p><strong>Toujours une version imprimée</strong> le samedi, mais à l’approche renouvelée.</p>
+                </div>
+                <div class="relative w-full flex justify-end h-60 translate-x-8 md:w-1/2 md:h-90 md:translate-x-0">
+                    <div class="bg-grayTiny w-full h-full absolute top-0 right-0"></div>
+                    <img class=" -translate-x-16 -translate-y-4 z-10 max-w-sm lg:-translate-x-40 lg:-translate-y-14" src="images/GettyImages-1257955550.png " alt=" ">
+                </div>
+            </div>
+        </section>
+        <!-- ***** ALWAYS END ***** -->
+        <div class="text-center mt-8">
+            <p class="text-xl ">Plus que jamais, nous sommes…</p>
+            <p class="text-redDevil text-4xl ">Local. De&nbsp;calibre&nbsp;mondial!</p>
+        </div>
+        <div class="text-center m-4">
+            <p class="uppercase mt-4 text-sm">à partir de</p>
+            <p class="font-bold text-4xl">9,95$/mois</p>
+            <p class="text-sm mt-2">Premier mois offert gratuitement.</p>
+            <a href="#" class="mx-auto text-center block p-2 rounded-md h-11 mt-4 font-bold text-white bg-redDevil w-80">ABONNEZ-VOUS DÈS MAINTENANT&nbsp;!</a>
+        </div>
+        <!-- *** FOOTER *** -->
+        <footer class="w-full h-full md:h-48 bg-blackWidow mt-4 py-10">
+            <div class="flex flex-row flex-wrap w-full md:mx-auto px-4 py-2 md:items-center lg:max-w-screen-lg">
+                <div class="md:w-1/4">
+                    <p class="uppercase font-bold text-white text-lg lg:text-2xl">les coops<br> de l'information</p>
+                </div>
+
+                <ul class="md:w-3/4 flex flex-wrap md:flex-nowrap">
+                    <li>
+                        <a href="#"><img src="/images/soleil.jpg" alt="le Soleil"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/images/nouvelliste.jpg" alt="le Nouvelliste"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/images/droit.jpg" alt="le Droit"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/images/quotidien.jpg" alt="le Quotidien"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src=" /images/tribune.jpg " alt="la Tribune "></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="/images/voix-est.jpg " alt="la Voix de l 'Est"></a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+        </footer>
+    </div>
+
 </body>
 
 </html>

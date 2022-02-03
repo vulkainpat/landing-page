@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+  <g id="Group_83" data-name="Group 83" transform="translate(-631 -637)">
+    <rect id="Rectangle_34" data-name="Rectangle 34" width="75" height="75" rx="37.5" transform="translate(631 637)" fill="#d61b27"/>
+    <g id="cloud-offline-sharp" transform="translate(650 656.091)">
+      <path id="Path_54850" data-name="Path 54850" d="M2.909,4.5,4.5,2.909,33.091,31.5,31.5,33.091Z" fill="#fff"/>
+      <path id="Path_54851" data-name="Path 54851" d="M2.723,14.961A8.423,8.423,0,0,0,0,21.375a8.677,8.677,0,0,0,2.847,6.51,9.926,9.926,0,0,0,6.716,2.49H25.6L7.77,12.543a10.4,10.4,0,0,0-5.048,2.418Z" fill="#fff"/>
+      <path id="Path_54852" data-name="Path 54852" d="M33.51,28.633A6.829,6.829,0,0,0,36,23.063c0-4.349-3.406-6.7-6.873-7.217a12.545,12.545,0,0,0-3.594-7.2A10.8,10.8,0,0,0,18,5.625a10.309,10.309,0,0,0-5.841,1.758L33.451,28.678c.018-.015.04-.029.059-.044Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>
